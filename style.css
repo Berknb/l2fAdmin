@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.form label{
+    font-weight: bold;
+}
+.form select{
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 2px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 4rem;
+    height: 15rem;
+    width: 30%;
+}
+.propertys{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15rem;
+    width: 30%;
+}
+.sonEklenenler{
+    background-color: #EFEFF5;
+    margin-top: 2rem;
+    width: 50%;
+    height: 20rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+button{
+    width: 76px;
+    height: 46px;
+    margin-top: 2rem;
+}
+input{
+    padding: 5px;
+}
