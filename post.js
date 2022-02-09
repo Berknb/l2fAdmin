@@ -18,6 +18,16 @@ async function addSource(){
         altyazi: altyazi,
         egitim: egitim
       };
+      await fetch("https://learn2flow-36b39-default-rtdb.europe-west1.firebasedatabase.app/sources.json").then((response) => {return response.json()}).then(data => {
+        const addedSourceData = [];
+        for (const key in data){
+          const Data = {
+            id: key,
+            ...data[key]
+          }
+          addedSourceData.push(Data);
+        }
+       })
     if(header && youtube && aciklama && saat && dakika && dil && altyazi && egitim) 
     {
        await fetch("https://learn2flow-36b39-default-rtdb.europe-west1.firebasedatabase.app/sources.json",{
